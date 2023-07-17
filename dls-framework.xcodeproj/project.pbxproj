@@ -7,10 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E03D944A2A5F56B900FE25EA /* theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03D94492A5F56B900FE25EA /* theme.swift */; };
+		E03D944F2A5F58A100FE25EA /* ColorStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03D944E2A5F58A100FE25EA /* ColorStyle.swift */; };
+		E03D945F2A60B67F00FE25EA /* tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03D945E2A60B67F00FE25EA /* tokens.swift */; };
 		E0809F122A5E494F004C81E9 /* dls_framework.docc in Sources */ = {isa = PBXBuildFile; fileRef = E0809F112A5E494F004C81E9 /* dls_framework.docc */; };
 		E0809F182A5E494F004C81E9 /* dls_framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0809F0D2A5E494F004C81E9 /* dls_framework.framework */; };
 		E0809F1D2A5E494F004C81E9 /* dls_frameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0809F1C2A5E494F004C81E9 /* dls_frameworkTests.swift */; };
 		E0809F1E2A5E494F004C81E9 /* dls_framework.h in Headers */ = {isa = PBXBuildFile; fileRef = E0809F102A5E494F004C81E9 /* dls_framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0809F312A5E5177004C81E9 /* Extensions in Resources */ = {isa = PBXBuildFile; fileRef = E0809F302A5E5177004C81E9 /* Extensions */; };
+		E0809F362A5E51D4004C81E9 /* Colour.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0809F352A5E51D4004C81E9 /* Colour.swift */; };
+		E0809F372A5E5208004C81E9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0809F332A5E5184004C81E9 /* Constants.swift */; };
+		E0809F382A5E520A004C81E9 /* UserDefaultsutils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0809F342A5E5184004C81E9 /* UserDefaultsutils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +31,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E03D94492A5F56B900FE25EA /* theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = theme.swift; sourceTree = "<group>"; };
+		E03D944E2A5F58A100FE25EA /* ColorStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorStyle.swift; sourceTree = "<group>"; };
+		E03D945E2A60B67F00FE25EA /* tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tokens.swift; sourceTree = "<group>"; };
 		E0809F0D2A5E494F004C81E9 /* dls_framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = dls_framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0809F102A5E494F004C81E9 /* dls_framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dls_framework.h; sourceTree = "<group>"; };
 		E0809F112A5E494F004C81E9 /* dls_framework.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = dls_framework.docc; sourceTree = "<group>"; };
 		E0809F172A5E494F004C81E9 /* dls-frameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dls-frameworkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0809F1C2A5E494F004C81E9 /* dls_frameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dls_frameworkTests.swift; sourceTree = "<group>"; };
+		E0809F302A5E5177004C81E9 /* Extensions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Extensions; sourceTree = "<group>"; };
+		E0809F332A5E5184004C81E9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E0809F342A5E5184004C81E9 /* UserDefaultsutils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsutils.swift; sourceTree = "<group>"; };
+		E0809F352A5E51D4004C81E9 /* Colour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colour.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +64,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E03D944D2A5F587600FE25EA /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				E03D944E2A5F58A100FE25EA /* ColorStyle.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		E03D945D2A60B66700FE25EA /* tokens */ = {
+			isa = PBXGroup;
+			children = (
+				E03D945E2A60B67F00FE25EA /* tokens.swift */,
+			);
+			path = tokens;
+			sourceTree = "<group>";
+		};
 		E0809F032A5E494F004C81E9 = {
 			isa = PBXGroup;
 			children = (
@@ -71,8 +101,16 @@
 		E0809F0F2A5E494F004C81E9 /* dls-framework */ = {
 			isa = PBXGroup;
 			children = (
+				E03D945D2A60B66700FE25EA /* tokens */,
+				E03D944D2A5F587600FE25EA /* Colors */,
+				E0809F352A5E51D4004C81E9 /* Colour.swift */,
+				E0809F342A5E5184004C81E9 /* UserDefaultsutils.swift */,
+				E0809F332A5E5184004C81E9 /* Constants.swift */,
+				E0809F322A5E5184004C81E9 /* Utils */,
+				E0809F302A5E5177004C81E9 /* Extensions */,
 				E0809F102A5E494F004C81E9 /* dls_framework.h */,
 				E0809F112A5E494F004C81E9 /* dls_framework.docc */,
+				E03D94492A5F56B900FE25EA /* theme.swift */,
 			);
 			path = "dls-framework";
 			sourceTree = "<group>";
@@ -83,6 +121,13 @@
 				E0809F1C2A5E494F004C81E9 /* dls_frameworkTests.swift */,
 			);
 			path = "dls-frameworkTests";
+			sourceTree = "<group>";
+		};
+		E0809F322A5E5184004C81E9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0809F312A5E5177004C81E9 /* Extensions in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +240,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E03D945F2A60B67F00FE25EA /* tokens.swift in Sources */,
 				E0809F122A5E494F004C81E9 /* dls_framework.docc in Sources */,
+				E0809F362A5E51D4004C81E9 /* Colour.swift in Sources */,
+				E03D944A2A5F56B900FE25EA /* theme.swift in Sources */,
+				E03D944F2A5F58A100FE25EA /* ColorStyle.swift in Sources */,
+				E0809F382A5E520A004C81E9 /* UserDefaultsutils.swift in Sources */,
+				E0809F372A5E5208004C81E9 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +446,7 @@
 		E0809F252A5E494F004C81E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -409,6 +462,7 @@
 		E0809F262A5E494F004C81E9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
