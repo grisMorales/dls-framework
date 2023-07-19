@@ -32,6 +32,26 @@ import SwiftUI
      return Color(UIColor.darkGray)
  }
 }
+
+struct multimarca {
+    var name: String
+    var tema: tema
+}
+
+struct tema {
+    var name: String
+    var estilos: styles
+}
+
+struct styles {
+    var backgroundPrimary: String
+    var textPrimary: String
+    var textSecondary: String
+    var textPlaceholder: String
+    var actionPrimary: String
+    var backgroundSecondary: String
+}
+
 /*
 public extension UIColor {
    struct MyTheme {

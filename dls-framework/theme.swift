@@ -44,7 +44,9 @@ public class AppTheme: ThemeProvider {
         isDarkMode: Bool,
         prefersHighContrast: Bool
     ) -> UIColor {
-        
+        print("QUE ESSS")
+        print(style)
+
         
         print("COLORR_1");
         print(isDarkMode);
@@ -77,7 +79,8 @@ public extension ThemeProvider {
         isDarkMode: Bool,
         prefersHighContrast: Bool
     ) -> Color {
-        
+        print("QUE ESSS")
+        print(style)
         print("COLORR_2");
         print(isDarkMode);
         
